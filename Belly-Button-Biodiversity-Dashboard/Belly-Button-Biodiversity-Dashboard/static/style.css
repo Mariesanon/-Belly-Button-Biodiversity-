@@ -1,0 +1,69 @@
+html,
+body {
+  height: 100%;
+  padding: 2px 2px;
+  margin: 0;
+  background: whitesmoke;
+}
+select {
+  font-size: medium;
+}
+
+/* The styles for the parallax */
+.hero {
+  position: relative;
+  height: 5% ;
+  padding: 20px;
+  margin: 0;
+  background: rgb(242, 243, 235);
+  background-attachment: fixed;
+  background-position: bottom center;
+  background-size: cover;
+  border: 1px solid;
+  border-radius: 10px;
+  border-color: cadetblue;
+}
+
+.hero h1 {
+  margin-top: 5px;
+  color: rgb(35, 35, 173);
+  animation: title .9s ;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.well{
+  margin-top: 15px;
+  border-color: cadetblue;
+}
+
+.hero p {
+  opacity: 0;
+  animation: subtitle .5s forwards linear;
+  animation-delay: 0.5s;
+}
+
+
+
+/* keyframe animations which will be used to animate the title */
+@keyframes title {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    font-size: 3.5rem;
+    opacity: 1;
+  }
+}
+
+@keyframes subtitle {
+  from {
+    opacity: 0;
+  }
+  
+  to {
+    font-size: 1.5rem;
+    opacity: 1;
+  }
+}
